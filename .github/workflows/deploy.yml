@@ -24,7 +24,7 @@ jobs:
           node-version: 20
       - name: Unzip project
         run: |
-          unzip -q wedding-album.zip
+          unzip -q wedding-album1.zip
           P=$(find . -name package.json -not -path '*/node_modules/*' | head -1)
           echo "APP_DIR=$(dirname "$P")" >> "$GITHUB_ENV"
       - name: Build
